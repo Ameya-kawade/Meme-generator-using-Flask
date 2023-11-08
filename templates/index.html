@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <!-- main container -->
+    <div class="min-h-screen w-full bg-gray-600 flex justify-center items-center">
+        <!-- Meme container -->
+        <div class="min-h-[80vh] w-[40%] bg-white flex flex-col space-y-10 justify-center items-center px-10 py-8 text-justify">
+            <p class="text-xl">Meme:</p>
+            <h1 class="text-lg" id="title">{{title}}</h1>
+            <img src="{{image_url}}" id="img" alt="Meme-img" class="max-w-full block">
+            <button class="bg-blue-500 px-5 py-3 rounded-xl text-white hover:bg-blue-400 " id="button">Next meme</button>
+        </div>
+    </div>
+</body>
+</html>

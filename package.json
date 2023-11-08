@@ -1,0 +1,16 @@
+{
+  "name": "meme-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind-compile" : "npx tailwindcss -i ./static/input.css -o ./static/style.css",
+    "tailwind-run" : "npx tailwindcss -i ./static/input.css -o ./static/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
