@@ -38,7 +38,12 @@ Api repo link : https://github.com/D3vd/Meme_Api
 
     #this will install all the required packages
 
-4.Now run the flask application:
+4.Add these 2 lines if you are using it as a project and not for deployment:
+
+    if __name__ == "__main__":
+        app.run(debug=True)
+
+5.Now run the flask application:
 
 
     python app.py
