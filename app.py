@@ -8,9 +8,13 @@ def get_meme():
     image = ""
     url = "https://meme-api.com/gimme"
     response = requests.get(url)
-    data  = response.json()
-    title = data['title']
-    image = data["preview"][2]
+    if response.status_code == 200:
+        data  = response.json()
+        title = data['title']
+        image = data["preview"][2]
+    else:
+        title = "Meme not found"
+        image = ""    
     return (title, image)
 
 @app.route("/")
@@ -26,3 +30,7 @@ def send_meme():
         'img' : img
     }
     return jsonify(data)
+
+
+if __name__ == "__main__":
+    app.run(debug = True)
