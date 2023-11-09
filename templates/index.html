@@ -9,12 +9,12 @@
 </head>
 <body>
     <!-- main container -->
-    <div class="min-h-screen w-full flex justify-center items-center bg-[#22222c]">
+    <div class="min-h-screen w-full flex justify-center items-center bg-[#2a2a35]">
         <!-- Meme container -->
-        <div class="min-h-[80vh] w-[40%]  flex flex-col space-y-10 justify-center items-center px-10 py-8 text-justify rounded-xl shadow-2xl bg-[#16161d] text-[#6a88ff] font-sans">
+        <div class="min-h-[80vh] w-full lg:w-[40%]  flex flex-col space-y-10 justify-center items-center px-10 py-8 text-justify rounded-xl shadow-md shadow-slate-700 bg-[#16161d] text-[#6a88ff] font-sans">
             <h1 class="text-lg  font-semibold" id="title">{{title}}</h1>
-            <img src="{{image_url}}" id="img" alt="Meme-img" class="max-w-full block">
-            <button class="bg-[#1436bd] px-5 py-3 rounded-xl text-white hover:bg-[#173edb] " id="button">Next meme</button>
+            <img src="{{image_url}}" id="img" alt="Meme-img" class="max-w-full block rounded-md">
+            <button class="bg-[#1436bd] px-5 py-3 rounded-xl font-semibold text-white hover:bg-[#173edb] w-[50%]  ring-2 ring-[#1436bd] hover:ring-offset-2 hover:ring-offset-[#16161d]" id="button">Next meme</button>
         </div>
     </div>
 </body>
